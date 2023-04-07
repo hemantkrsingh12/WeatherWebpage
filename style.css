@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+}
+.card {
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  width: 90%;
+  max-width: 470px;
+  color: #fff;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+.search {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.search input {
+  width: 70%;
+  height: 60px;
+  outline: 0;
+  border: 0;
+  border-radius: 40px;
+  font-size: 16px;
+}
+
+
+.search input::placeholder {
+  padding: 10px;
+  font-style: italic;
+opacity: 0.6;
+}
+.search button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.weather h1{
+ font-size: 70px;
+}
+
+.weather img{
+    width:25vh;
+}
+.search button img {
+  height: 14px;
+}
+.data{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding-bottom: 20px;
+
+}
+.wind img{
+    width: 50px;
+}
+.wind, .humdity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.humdity img{
+    width: 50px;
+    margin:2px;
+}
+#invalid{
+    text-align: start;
+   padding: 10px;
+    display: none;
+    font-weight: 300;
+    color: red;
+    margin-left: 10px;
+    margin-top: -16px;
+    
+}
+
+.main{
+    text-align: start;
+    padding-left: 5px;
+   
+}
+.humid ,.speed{
+    font-size:30px;
+    font-weight: 100;
+}
+.weather{
+    display: none;
+}
+
+
+
+.search input {
+  width: 70%;
+  height: 60px;
+  outline: 0;
+  border: 2px solid #ccc;
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: text; /* set cursor to text */
+}
+
+.search input::placeholder {
+  color: #999;
+}
+
+.search input:focus {
+  outline: none;
+  border-color: #5d9cec;
+  box-shadow: 0 0 5px #5d9cec;
+}
+
+.search input::-webkit-input-placeholder {
+  /* for webkit browsers */
+  color: #999;
+}
+
+.search input::-moz-placeholder {
+  /* for firefox 19+ */
+  color: #999;
+}
+
+.search input:-ms-input-placeholder {
+  /* for IE */
+  color: #999;
+}
+
